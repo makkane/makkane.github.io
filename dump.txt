@@ -1,0 +1,17 @@
+color: #000 !important;
+For initial part of my career I worked on electrical machines - their design and diagnostics. For my Ph.D. I worked on a completely different topic of "Wire Electric Discharge Machining". Presently, I am working on Electromagnetic Compatibility (EMC) issues in Solar Photovoltaics (solar PV).
+
+padding: 20px;
+
+	  function loadContent(filename, tabId) {
+            fetch(filename)
+                .then(response => response.text())
+                .then(data => {
+                    $("#" + tabId).html(data);
+                });
+        }
+		loadContent("aboutme.html", "AboutMe");
+		
+		#f1f1f1
+		Active tablink color
+		#ccc

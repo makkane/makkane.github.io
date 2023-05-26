@@ -5,9 +5,12 @@
 	html *
 	{
 		font-size: 1em !important;
-		color: #000 !important;
+		link: #ff0000  !important;
 		font-family: Arial !important;
 	}
+		a{
+			color: blue;
+		}
 	      /* Add CSS styles for the header */
 	    body { max-width: 1000px;
 	    margin: 0 auto; /* center the content horizontally */
@@ -15,22 +18,22 @@
       .header {
         display: flex;
         align-items: center;
-        background-color: #f1f1f1;
-        padding: 20px;
+        background-color:	#ffffe0 ;
+		padding: 20px;
       }
 
       /* Style for the profile photo */
       .profile-photo {
-        height: 80px;
-        width: 80px;
-        border-radius: 50%;
+        height: auto;
+        width: 100px;
+        border-radius: 8px;
         margin-right: 20px;
       }
       /* Add CSS styles for the tab header */
       .tab {
         overflow: hidden;
         border: 1px solid #ccc;
-        background-color: #f1f1f1;
+        background-color: #ffffe0;
       }
 
       /* Style the buttons inside the tab header */
@@ -44,7 +47,6 @@
         transition: 0.3s;
         font-size: 17px;
       }
-
       /* Change background color of buttons on hover */
       .tab button:hover {
         background-color: #ddd;
@@ -52,7 +54,7 @@
 
       /* Create an active/current tablink class */
       .tab button.active {
-        background-color: #ccc;
+        background-color: #ffd700 ;
       }
 
       /* Style the tab content */
@@ -108,7 +110,7 @@
     </div>
 
     <div class="tab">
-      <button class="tablinks" onclick="openTab(event, 'AboutMe') id="defaultOpen">About Me</button>
+      <button class="tablinks" onclick="openTab(event, 'AboutMe')" id="defaultOpen">About Me</button>
       <button class="tablinks" onclick="openTab(event, 'Publications')">Publications</button>
       <button class="tablinks" onclick="openTab(event, 'Projects')">Projects</button>
 	<button class="tablinks" onclick="openTab(event, 'Teaching')">Teaching</button>
@@ -118,11 +120,13 @@
 
     <div id="AboutMe" class="tabcontent" style="display:block" onclick="toggleTab('about-me-content')">
       <!-- Add content for the "About Me" tab here -->
-		नमस्ते!   Hi!
-			I am Makarand M Kane. 			
-			I am an electrical engineer by training. I come from a small town - <a href = "https://goo.gl/maps/WRaVpqPk7VEeQ4DV8" target="_blank"> Chiplun</a> - on the west coast of India, in the Maharashtra state. I did my schooling there and moved to <a href= "https://en.wikipedia.org/wiki/Pune" target="_blank"> Pune</a> - the automotive, cultural, and educational hub of Maharashtra - for my college (university) education. My higher education happened in <a href = "https://en.wikipedia.org/wiki/Mumbai" target="_blank"> Mumbai </a> - at <a href = "https://www.iitb.ac.in/" target="_blank">Indian Institute of Technology, Bombay</a>. Pune was also a workplace for me as I was working at Engineering Research Center of <a href = "www.tatamotors.com" target = "_blank"> Tata Motors Ltd</a>.
-
-			For initial part of my career I worked on electrical machines - their design and diagnostics. For my Ph.D. I worked on a completely different topic of "Wire Electric Discharge Machining". Presently, I am working on Electromagnetic Compatibility (EMC) issues in Solar Photovoltaics (solar PV).
+		<p>नमस्ते!   Hi! Hej!<br>
+			I am Makarand M Kane. 			<br>
+			I come from a small town - <a href = "https://goo.gl/maps/WRaVpqPk7VEeQ4DV8" target="_blank"> Chiplun</a> - on the west coast of India, in Maharashtra state. <br>
+			After attending high school in Chiplun, I moved to <a href= "https://en.wikipedia.org/wiki/Pune" target="_blank"> Pune</a> - the automotive, cultural, and educational hub of Maharashtra - for my college and university education. <br>
+			I completed higher education in <a href = "https://en.wikipedia.org/wiki/Mumbai" target="_blank"> Mumbai </a> - at <a href = "https://www.iitb.ac.in/" target="_blank">Indian Institute of Technology, Bombay</a>. 
+			Between Masters and Ph.D., I was working at Engineering Research Center of <a href = "www.tatamotors.com" target = "_blank"> Tata Motors Ltd</a>, at Pune. 			
+			</p>
 			
 			<h2> Education </h2>
 			<table>
@@ -340,6 +344,13 @@
 
     <div id="BeyondProfession" class="tabcontent">
       <!-- Add content for the "Beyond Profession" tab here -->
+	  When I am not doing electrical engineering, I venture into the following domains.
+	  <h2> Sankrit </h2>
+	  I love the Samskrit language. It is one of the oldest languages in the world. Yet, it is so beautiful. I pursued it with engineering, obtaining a diploma equivalent to bachelor's degree in Samskrit from Tilak Maharashtra University. Later, I got involved in teaching spoken Samskrit. I have conducted several 'Spoken Samskrit Workshops.
+	  <h2> Classical music</h2>
+	  Generally, I like music. Until going to IIT Bombay, I always wanted to learn classical music. Then, I started my lessons with Mrs. Vidya Kulkarni Ma'm. <br>
+	  Later, I got a chance to learn from revered Pt. Nayan Ghosh Sir. I am fortunate enough that I could learn from him. 
+	  During Ph.D., I got lessons from Shri Yogesh Hunsawadkar. 
     </div>
 
     <script>
